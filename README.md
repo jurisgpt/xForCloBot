@@ -1,6 +1,6 @@
 # xForCloBot
 
-xForCloBot- Wrongful Foreclosure Bot is a legal AI human assistant tool...
+xForCloBot- Wrongful Foreclosure Bot is a legal AI human assistant tool...for Homeowners side Plaintiffs Attorney
 
 ## 🧠 MCDM Meets LLM in Legal Intake Triage
 
