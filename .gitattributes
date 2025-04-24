@@ -1,0 +1,59 @@
+# Auto detect text files and perform LF normalization
+* text=auto eol=lf
+
+# Python files
+*.py text diff=python
+*.pyw text diff=python
+*.pyi text diff=python
+requirements*.txt text
+Pipfile text
+Pipfile.lock text
+
+# Documentation
+*.md text diff=markdown
+*.txt text
+*.rst text
+*.pdf binary
+
+# Data files
+*.csv text
+*.json text
+*.yaml text
+*.yml text
+
+# Scripts
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf
+
+# Web files
+*.html text diff=html
+*.css text diff=css
+*.js text
+*.jsx text
+*.ts text
+*.tsx text
+
+# Git config files
+.gitattributes text
+.gitignore text
+.gitconfig text
+
+# Docker
+Dockerfile text
+*.dockerfile text
+.dockerignore text
+
+# Graphics
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.svg text
+
+# Force batch scripts to always use CRLF line endings
+*.{cmd,[cC][mM][dD]} text eol=crlf
+*.{bat,[bB][aA][tT]} text eol=crlf
+
+# Force bash scripts to always use LF line endings
+*.sh text eol=lf
