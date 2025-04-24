@@ -1,11 +1,53 @@
-# xForCloBot - Multi-Criteria Decision Modelling to triage the merits of a potential wrongful foreclosure case
+# xForCloBot – Multi-Criteria Decision Modeling for Legal Intake Evaluation
 
-An MCDM based decision analysis bot to assist Plaintiff attorneys make informed decision on whether to accept a wrongful foreclosure case or not for legal advice or representation based on human inputs.This decision model is designed to aid the human decision and not for replacing the application of sound human judgement.
+**xForCloBot** is a legal AI prototype that applies **Multi-Criteria Decision Modeling (MCDM)** to evaluate the **viability of wrongful foreclosure cases**. It simulates the logic a junior associate or intake attorney would use — combining **structured legal signals**, **weighted decision criteria**, and **LLM-ready prompt chains** to triage incoming cases.
+
+This tool is designed to help **plaintiff attorneys** make early, informed decisions about whether to pursue a case — based on **judicially grounded logic**, not guesswork.
+
+---
+
+## 🧠 Methodology
+
+The system implements a general-purpose MCDM process adapted for legal workflows:
+
+1. **Attribute Definition**  
+   Each decision point (e.g., "Was notice provided?") is treated as an independent legal signal.
+
+2. **Weighted Scoring**  
+   Every attribute is assigned a score and weight based on legal relevance (e.g., notice failure is weighted more heavily than payment lapse).
+
+3. **Aggregation**  
+   The tool calculates a final viability score by combining weighted attributes into a normalized outcome (high, medium, low merit).
+
+4. **Interpretability Layer**  
+   Outputs can be used to build few-shot prompt examples for legal LLMs like GPT-4, Claude, or domain-specific agents like Harvey.
+
+---
+
+## 🔍 Features
+
+- ⚖️ 90+ legal criteria based on real wrongful foreclosure case law
+- 🧾 Structured intake modeled after real-world paralegal workflows
+- 🔎 Benchmarked against appellate court decisions (ground truth)
+- 🧠 Few-shot prompting templates for legal LLM testing
+- 🧮 Prototype surrogate model for automated legal triage
+
+---
+
+## 📂 Project Layout
+
+- `data/` → CSV-based structured intake forms and weights
+- `court_cases/` → Summaries of real court cases used for model alignmen(ground truth)t
+- `prompts/` → Prompt scaffolds and few-shot examples
+- `notebooks/` → Evaluation scripts and surrogate model prototypes
+
+---
+
+## 👤 Author
+
+**Pradeep Kumar**  
+Legal AI Researcher | Legal Workflow Designer | Law Prompt Engineer  
 
 
-## Generic methodology
-Most of the basic multi-criteria decision solvers have a common methodology which tries to,
-- Consider one attribute at a time and try to maximize or minimize it (as per the requirement) to generate optimized score.
-- Introduce weights to each attributes to get optimized weighted scores.
-- Combine the weighted scores (of each attribute) to create a final score for an entity (here Laptop).
+---
 
