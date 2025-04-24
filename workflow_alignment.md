@@ -1,6 +1,8 @@
 # Legal Workflow Alignment and Task Coverage
 
-xForCloBot is built to align with real-world legal workflows and modern legal AI task frameworks. This includes support for early-stage case assessment, litigation pattern recognition, and prompt-based legal reasoning—all grounded in real appellate court logic.
+xForCloBot is purpose built to align with real-world legal workflows and modern legal AI task frameworks. This includes support for early-stage case assessment, litigation pattern recognition, and prompt-based legal reasoning—all grounded in real appellate court logic.
+
+What is xForClo - X = Wrongful, ForClo=Foreclosure. 
 
 ---
 
@@ -29,18 +31,19 @@ Supplies real court-based case summaries to serve as a ground-truth benchmark fo
 
 xForCloBot intersects with task categories widely used in legal AI research and model development:
 
-### 🔹 Litigation Task Categories
+### 🔹 Litigation Tasks
 - **Analysis of Litigation Filings**: Case outcomes are mapped to structured features for reasoning.
 - **Case Law Research**: Appellate-level decisions serve as legal grounding sources.
 - **Drafting & Reasoning Simulation**: Output logic structures mimic motion reasoning and intake summaries.
 - **Document Review & Analysis**: Case metadata is extracted and codified from judicial rulings.
 - **Trial Prep & Argument Framing**: Case summaries inform prompt chains to emulate pretrial legal reasoning.
 
-### 🔹 Transactional Overlap
-- **Risk Assessment & Compliance**: Scores help attorneys assess exposure and procedural integrity.
-- **Due Diligence Proxy**: Features replicate intake filters used to evaluate prospective client matters.
+### 🔹 Transactional Tasks
+- **Risk Assessment & Compliance**: Scores help attorneys assess exposure and procedural integrity.Legal soundness of claims and controversy.
+- **Due Diligence**: Evaluate prospective client matters - is there a case ? 
 - **Legal Research**: All decision paths and criteria are anchored in case law.
+- **Document Analysis**: Client document analysis - mortage, contracts, real estate, title, recordings etc.
 
 ---
 
-xForCloBot is designed not just as a decision support tool, but as a platform for aligning machine outputs with real legal judgment, structure, and context.
+xForCloBot is designed not just as a decision support tool, but serves as  platform for aligning machine outputs with real world law firm workflows.
