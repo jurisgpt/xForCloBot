@@ -1,1 +1,35 @@
+# macOS system junk
 .DS_Store
+
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# VS Code and JetBrains IDE config
+.vscode/
+.idea/
+
+# Virtual environments and sensitive env files
+venv/
+.env
+
+# Build metadata
+*.egg-info/
+*.log
+
+# Local output and data
+*.csv
+*.zip
+*.sqlite3
+*.db
+
+# LaTeX and doc generation
+*.aux
+*.out
+*.pdf
+*.toc
+
