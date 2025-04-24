@@ -20,7 +20,7 @@ The system implements a general-purpose MCDM process adapted for legal workflows
    The tool calculates a final viability score by combining weighted attributes into a normalized outcome (high, medium, low merit).
 
 4. **Interpretability Layer**  
-   Outputs can be used to build few-shot prompt examples for legal LLMs like GPT-4, Claude, or domain-specific agents like Harvey.
+   Outputs can be used to build few-shot prompt examples for legal LLMs like GPT-4, Claude, or domain-specific custom agents
 
 ---
 
