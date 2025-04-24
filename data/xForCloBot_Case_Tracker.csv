@@ -1,6 +1,24 @@
 title,jurisdiction,year,key_issues,outcome,linked_file,tags,status
+"BAC Home Loans Servicing, L.P. v. Wedereit",Trial Court,2014,"- Foreclosure conducted without giving borrower a chance to cure default  
+- Deed requirements for notification and cure opportunity ignored  
+- Premature attempt to secure summary judgment",The trial court denied the lender's motion for summary judgment. The foreclosure was challenged as invalid due to failure to comply with contractual obligations allowing borrower to cure the default.,court_cases/BAC_v_Wedereit.md,right_to_cure,Published
+"Babalola v. HSBC Bank, USA, N.A.",District Court,2013,,,court_cases/babalola_v_hsbc_2013.md,,Published
 "Racette v. Bank of America, N.A.",Appeals Court,2012,,,court_cases/Racette_v_Bank_of_America.md,,Published
 "Babalola v. HSBC Bank, USA, N.A.",Trial Court,2013,,,court_cases/Babalola_v_HSBC_Bank.md,,Published
+Hall v. Robinson,Trial Court,1983,"- Alleged bad faith foreclosure  
+- Damages for wrongful foreclosure  
+- Award of attorney fees","A jury found in favor of the debtor, determining that the foreclosure was initiated in bad faith. The court affirmed the verdict and upheld the awarded damages, including attorney fees.",court_cases/Hall_v_Robinson.md,bad_faith,Published
+"1. Babalola v. HSBC Bank, USA, N.A.",Not specified,2013,,,court_cases/wrongful_foreclosure_cases.md,,Published
 Unknown,Unknown,Unknown,,,court_cases/README.md,,Published
 Dixon v. Branch Banking & Trust Co.,Appellate Court,2019,,,court_cases/Dixon_v_BBT.md,,Published
+"Webb v. Bank of Am., N.A.",Appeals Court,2014,"- Dismissal of wrongful foreclosure claim at trial  
+- Breach of loan modification agreement  
+- Failure to allow borrowers to present evidence","The appellate court ruled that the trial court erred in dismissing the complaint. It found that the borrowers should be allowed to present evidence of wrongful foreclosure, particularly regarding breach of the loan modification.",court_cases/Webb_v_Bank_of_America.md,loan_modification,Published
+"Zhong v. PNC Bank, N.A.",Trial Court,2015,"- Trial court limited damages to lost equity  
+- Exclusion of mental anguish and credit injury from damages consideration",The court found that damages in a wrongful foreclosure case could include mental anguish and harm to credit standing — not just financial loss or lost equity. This broadened the scope of what plaintiffs could seek in damages.,court_cases/Zhong_v_PNC.md,damages_scope,Published
+Garner v. US Bank Nat'l Ass'n,Trial Court,2014,"- Improper summary judgment procedure  
+- Judicial notice of federal judgment not in court record  
+- No opportunity for plaintiff to respond",The trial court erred by converting a motion to dismiss into a motion for summary judgment without proper notice to the plaintiff. The decision was reversed due to procedural violations.,court_cases/Garner_v_US_Bank.md,summary_judgment,Published
 "You v. JP Morgan Chase Bank, N.A.",Supreme Court of Georgia,2013,,,court_cases/You_v_JP_Morgan.md,non_viable,Published
+"Reese v. Provident Funding Assocs., LLP",Appeals Court,2012,"- Inaccurate foreclosure notice  
+- Failure to identify the secured creditor as required by O.C.G.A. § 44-14-162(a)","The appellate court reversed the summary judgment that was previously granted in favor of the mortgagee. It determined that the foreclosure notice failed to properly identify the new secured creditor, violating statutory requirements.",court_cases/Reese_v_Provident.md,foreclosure_notice,Published
