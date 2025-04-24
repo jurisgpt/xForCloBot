@@ -11,7 +11,7 @@ import os
 import re
 import logging
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import List, Optional
 from dataclasses import dataclass
 import pandas as pd
 
@@ -23,7 +23,6 @@ logging.basicConfig(
 
 @dataclass
 class CaseData:
-    """Structure for storing parsed case data"""
     title: str
     jurisdiction: str
     year: str
@@ -34,7 +33,6 @@ class CaseData:
     status: str = "Published"
 
 class CaseTracker:
-    # Regular expression patterns
     PATTERNS = {
         'title': re.compile(r"# (.+?)\s+\("),
         'year': re.compile(r"\((\d{4})\)"),
@@ -44,17 +42,15 @@ class CaseTracker:
         'outcome': re.compile(r"### ⚖️ Outcome\n(.+?)\n(?:###|$)", re.DOTALL)
     }
 
-    def __init__(self, cases_dir: str, output_file: str):
-        self.cases_dir = Path(cases_dir)
-        self.output_file = Path(output_file)
+    def __init__(self, cases_dir: Path, output_file: Path):
+        self.cases_dir = cases_dir
+        self.output_file = output_file
         self.entries: List[CaseData] = []
 
     def validate_paths(self) -> bool:
-        """Validate input and output paths exist or can be created."""
         if not self.cases_dir.exists():
             logging.error(f"Court cases directory not found: {self.cases_dir}")
             return False
-
         try:
             self.output_file.parent.mkdir(parents=True, exist_ok=True)
             return True
@@ -63,7 +59,6 @@ class CaseTracker:
             return False
 
     def extract_pattern(self, content: str, pattern_name: str) -> str:
-        """Extract content using named pattern with error handling."""
         try:
             match = self.PATTERNS[pattern_name].search(content)
             if match:
@@ -73,7 +68,6 @@ class CaseTracker:
         return "Unknown" if pattern_name in ['title', 'year', 'court'] else ""
 
     def process_case_file(self, file_path: Path) -> Optional[CaseData]:
-        """Process a single case file and return structured data."""
         try:
             content = file_path.read_text(encoding='utf-8')
             return CaseData(
@@ -90,7 +84,6 @@ class CaseTracker:
             return None
 
     def process_cases(self) -> None:
-        """Process all markdown files in the cases directory."""
         md_files = list(self.cases_dir.glob("*.md"))
         if not md_files:
             logging.warning(f"No markdown files found in {self.cases_dir}")
@@ -102,7 +95,6 @@ class CaseTracker:
             logging.info(f"Processed: {file_path.name}")
 
     def save_to_csv(self) -> None:
-        """Save processed entries to CSV file."""
         try:
             df = pd.DataFrame([vars(entry) for entry in self.entries])
             df.to_csv(self.output_file, index=False)
@@ -111,7 +103,6 @@ class CaseTracker:
             logging.error(f"Failed to save CSV: {e}")
 
     def run(self) -> bool:
-        """Execute the complete tracking process."""
         if not self.validate_paths():
             return False
 
@@ -124,11 +115,10 @@ class CaseTracker:
         return True
 
 def main():
-    # Configuration
-    COURT_CASES_DIR = "court_cases"
-    OUTPUT_CSV = "data/xForCloBot_Case_Tracker.csv"
+    script_dir = Path(__file__).resolve().parent
+    COURT_CASES_DIR = script_dir.parent / "court_cases"
+    OUTPUT_CSV = script_dir.parent / "data" / "xForCloBot_Case_Tracker.csv"
 
-    # Initialize and run tracker
     tracker = CaseTracker(COURT_CASES_DIR, OUTPUT_CSV)
     if not tracker.run():
         logging.error("Failed to complete case tracking process")
