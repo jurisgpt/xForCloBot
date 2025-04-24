@@ -1,0 +1,29 @@
+name: Manual Dependabot Check
+
+on:
+  workflow_dispatch:  # Allows manual triggering
+  
+jobs:
+  dependabot:
+    name: 'Dependabot'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      security-events: write
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+      - name: Dependabot Check
+        uses: dependabot/fetch-metadata@v1
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+          
+      - name: Run Dependabot CLI
+        uses: github/dependabot-action@v1
+        with:
+          target-branch: "main"
+          directories: "/"
+          package-manager: "pip"
