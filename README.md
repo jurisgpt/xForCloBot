@@ -10,8 +10,15 @@ Multi-Criteria Decision Making (MCDM) has long been used in fields like supplier
 
 This hybrid model — combining human-expert legal reasoning, law logic ( legal basis to assess viable claim against facts)  with LLM prompting techniques — offers a faster, explainable, and more consistent intake evaluation system for wrongful foreclosure triage. 
 
+
 ## 📋 Case Coverage Tracker
 
 Track all wrongful foreclosure cases in our dataset:  
 [View the Case Tracker CSV](./data/xForCloBot_Case_Tracker.csv)
+
+## 🙌 Support & Stars
+
+If this project helps your research, legal workflows, or inspires your own legal-AI builds — drop a ⭐️!
+
+[![Star History Chart](https://api.star-history.com/svg?repos=jurisgpt/xForCloBot&type=Date)](https://star-history.com/#jurisgpt/xForCloBot&Date)
 
