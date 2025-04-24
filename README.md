@@ -16,6 +16,10 @@ This hybrid model — combining human-expert legal reasoning, law logic ( legal 
 Track all wrongful foreclosure cases in our dataset:  
 [View the Case Tracker CSV](./data/xForCloBot_Case_Tracker.csv)
 
+## License
+This project is licensed for **non-commercial academic research only**.  
+All other rights are reserved. For colloboration, contact: Pradeep Kumar
+
 ## 🙌 Support & Stars
 
 If this project helps your research, legal workflows, or inspires your own legal-AI builds — drop a ⭐️!
