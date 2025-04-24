@@ -9,3 +9,9 @@ Multi-Criteria Decision Making (MCDM) has long been used in fields like supplier
 **xForCloBot bridges this paradigm in the legal domain - when a homeowner loses their property to the lender in a foreclosure proceeding.** It replaces traditional high stakes legal intake subjectivity with a formal MCDM structure based on over 90 legally significant features ( legal signals), drawn from real trial and appeallet court cases and attorney workflows. These features form the foundation for both surrogate scoring and LLM prompt generation, allowing GPT-style agents to simulate junior associate case assessments and align with ground-truth judicial reasoning.
 
 This hybrid model — combining human-expert legal reasoning, law logic ( legal basis to assess viable claim against facts)  with LLM prompting techniques — offers a faster, explainable, and more consistent intake evaluation system for wrongful foreclosure triage. 
+
+## 📋 Case Coverage Tracker
+
+Track all wrongful foreclosure cases in our dataset:  
+[View the Case Tracker CSV](./data/xForCloBot_Case_Tracker.csv)
+
