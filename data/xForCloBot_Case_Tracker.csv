@@ -1,5 +1,6 @@
-Case Title,Jurisdiction,Year,Key Issues,Outcome,Linked MD File,MCDM Criteria Tags,Status
-Babalola v. HSBC Bank,Georgia,2013,"notice failure, improper advertising","Court found sufficient claim for wrongful foreclosure",court_cases/Babalola_v_HSBC_Bank.md,"notice_failure,ad_defect",Published
-Racette v. Bank of America,Georgia,2012,"advertisement defect","Appellate court reinstated wrongful foreclosure claim",court_cases/Racette_v_Bank_of_America.md,"ad_defect",Published
-Dixon v. BBT,Georgia,2019,"lack of standing","Trial court dismissal overturned",court_cases/Dixon_v_BBT.md,"standing",Published
-
+title,jurisdiction,year,key_issues,outcome,linked_file,tags,status
+"Racette v. Bank of America, N.A.",Appeals Court,2012,,,court_cases/Racette_v_Bank_of_America.md,,Published
+"Babalola v. HSBC Bank, USA, N.A.",Trial Court,2013,,,court_cases/Babalola_v_HSBC_Bank.md,,Published
+Unknown,Unknown,Unknown,,,court_cases/README.md,,Published
+Dixon v. Branch Banking & Trust Co.,Appellate Court,2019,,,court_cases/Dixon_v_BBT.md,,Published
+"You v. JP Morgan Chase Bank, N.A.",Supreme Court of Georgia,2013,,,court_cases/You_v_JP_Morgan.md,non_viable,Published
