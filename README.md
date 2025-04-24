@@ -8,7 +8,7 @@
 
 xForCloBot- Wrongful Foreclosure Bot is a legal AI human assistant tool...for Homeowners side Plaintiffs Attorney
 
-## 🧠 MCDM Meets LLM in Legal Intake Triage
+## 🧠 MCDM Meets LLM in Wrongful Forclosure Legal Case Intake and Case Triage
 
 Multi-Criteria Decision Making (MCDM) has long been used in fields like supplier evaluation and risk assessment to translate human expert knowledge into reproducible, weighted decision systems. With the rise of large language models (LLMs), these structured evaluations can now be simulated, scored, and refined at scale.
 
