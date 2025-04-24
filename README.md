@@ -1,22 +1,10 @@
 # xForCloBot
 
-<p align="center">
-  <a href="https://github.com/jurisgpt/xForCloBot/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/jurisgpt/xForCloBot?style=flat-square" alt="License">
-  </a>
-  <a href="https://github.com/jurisgpt/xForCloBot/stargazers">
-    <img src="https://img.shields.io/github/stars/jurisgpt/xForCloBot?style=social" alt="GitHub stars">
-  </a>
-  <a href="https://github.com/jurisgpt/xForCloBot/issues">
-    <img src="https://img.shields.io/github/issues/jurisgpt/xForCloBot?style=flat-square" alt="GitHub issues">
-  </a>
-  <a href="https://github.com/jurisgpt/xForCloBot/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/jurisgpt/xForCloBot?style=flat-square" alt="Contributors">
-  </a>
-  <a href="https://github.com/jurisgpt/xForCloBot/commits/main">
-    <img src="https://img.shields.io/github/last-commit/jurisgpt/xForCloBot?style=flat-square" alt="Last commit">
-  </a>
-</p>
+[![License: Research Only](https://img.shields.io/badge/license-research--only-blue.svg)](./LICENSE)
+![Stars](https://img.shields.io/github/stars/jurisgpt/xForCloBot?style=social)
+![Issues](https://img.shields.io/github/issues/jurisgpt/xForCloBot)
+![Contributors](https://img.shields.io/github/contributors/jurisgpt/xForCloBot)
+![Last Commit](https://img.shields.io/github/last-commit/jurisgpt/xForCloBot)
 
 xForCloBot- Wrongful Foreclosure Bot is a legal AI human assistant tool...for Homeowners side Plaintiffs Attorney
 
