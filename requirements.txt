@@ -3,3 +3,10 @@ pytest>=7.3.1
 flake8>=6.0.0
 bandit>=1.7.5
 safety>=2.3.5
+
+# HumanLayer and dependencies
+humanlayer>=0.1.0
+python-dotenv>=1.0.0
+
+# Notification channels
+slack-sdk>=3.21.0
