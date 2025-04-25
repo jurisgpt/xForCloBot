@@ -31,6 +31,13 @@ class CaseData:
     linked_file: str
     tags: str
     status: str = "Published"
+    
+    @property
+    def case_key(self) -> str:
+        """Generate a unique key for deduplication"""
+        # Remove special characters and convert to lowercase
+        clean_title = ''.join(c.lower() for c in self.title if c.isalnum())
+        return f"{clean_title}_{self.year}"
 
 class CaseTracker:
     PATTERNS = {
@@ -89,10 +96,28 @@ class CaseTracker:
             logging.warning(f"No markdown files found in {self.cases_dir}")
             return
 
+        # Use dictionary for deduplication
+        case_dict = {}
+        
         for file_path in md_files:
-            if case_data := self.process_case_file(file_path):
-                self.entries.append(case_data)
-            logging.info(f"Processed: {file_path.name}")
+            if entry := self.process_case_file(file_path):
+                case_key = entry.case_key
+                
+                # Skip README and consolidated files
+                if file_path.name in ['README.md', 'wrongful_foreclosure_cases.md']:
+                    continue
+                    
+                # Handle duplicate case
+                if case_key in case_dict:
+                    existing = case_dict[case_key]
+                    # Keep the entry with more information
+                    if len(entry.key_issues or '') > len(existing.key_issues or ''):
+                        case_dict[case_key] = entry
+                else:
+                    case_dict[case_key] = entry
+                logging.info(f"Processed: {file_path.name}")
+        
+        self.entries = list(case_dict.values())
 
     def save_to_csv(self) -> None:
         try:
