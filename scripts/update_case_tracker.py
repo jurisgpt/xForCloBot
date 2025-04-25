@@ -14,6 +14,7 @@ from pathlib import Path
 from typing import List, Optional
 from dataclasses import dataclass
 import pandas as pd
+import textwrap
 
 # Configure logging
 logging.basicConfig(
@@ -121,7 +122,19 @@ class CaseTracker:
 
     def save_to_csv(self) -> None:
         try:
-            df = pd.DataFrame([vars(entry) for entry in self.entries])
+            wrapped_entries = []
+            for entry in self.entries:
+                entry_dict = vars(entry).copy()
+                # Word wrap key_issues and outcome to 80 chars per line
+                for field in ['key_issues', 'outcome']:
+                    if entry_dict[field]:
+                        entry_dict[field] = textwrap.fill(entry_dict[field], width=80)
+                # Strip and standardize all string fields
+                for k, v in entry_dict.items():
+                    if isinstance(v, str):
+                        entry_dict[k] = v.strip().replace('\r\n', '\n')
+                wrapped_entries.append(entry_dict)
+            df = pd.DataFrame(wrapped_entries)
             df.to_csv(self.output_file, index=False)
             logging.info(f"Successfully wrote {len(self.entries)} entries to {self.output_file}")
         except Exception as e:
