@@ -1,10 +1,10 @@
 # xForCloBot
-
 [![License: Research Only](https://img.shields.io/badge/license-research--only-blue.svg)](./LICENSE)
 ![Stars](https://img.shields.io/github/stars/jurisgpt/xForCloBot?style=social)
 ![Issues](https://img.shields.io/github/issues/jurisgpt/xForCloBot)
 ![Contributors](https://img.shields.io/github/contributors/jurisgpt/xForCloBot)
 ![Last Commit](https://img.shields.io/github/last-commit/jurisgpt/xForCloBot)
+[![Wiki](https://img.shields.io/badge/wiki-xForCloBot-blue?logo=github)](https://github.com/jurisgpt/xForCloBot/wiki)
 
 xForCloBot- Wrongful Foreclosure Bot is a legal AI human assistant tool...for Homeowners side Plaintiffs Attorney
 
